@@ -85,7 +85,7 @@ public class DataManager extends SQLiteOpenHelper {
         String where = null;
         String[] whereArgs = null;
         if (!TextUtils.isEmpty(keyword)) {
-            where = DataConstant.PersonTable.TABLE_NAME + " LIKE ?";
+            where = DataConstant.PersonTable.COLUMN_NAME + " LIKE ?";
             whereArgs = new String[]{"%" + keyword + "%"};
         }
         String groupBy = null;
